@@ -1,0 +1,36 @@
+.block {
+    height: 150px;
+    background-color: darksalmon;
+    border: 2px solid #282c34;
+    border-radius: 16px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    transition-duration: 900ms;
+    transform: translate(-200px);
+}
+
+.header:hover {
+    transition-duration: 900ms;
+    transform: translate(0);
+}
+
+.link {
+    color:  turquoise;
+    text-decoration: none;
+
+}
+
+.link:hover {
+    color: lightcyan;
+}
+
+.active_link {
+    color: yellow;
+    text-decoration: none;
+}
