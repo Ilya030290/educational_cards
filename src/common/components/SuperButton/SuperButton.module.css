@@ -1,14 +1,35 @@
-.default {
-    border: 2px skyblue dot-dot-dash;
-    color: aliceblue;
-    padding: 0.25em 0.5em;
-    background-color: orange;
-    border-radius: 5px;
-    margin-bottom: 15px;
+.btn {
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  height: 50px;
+  width: 120px;
+}
+.btn:hover {
+  color: black;
+  outline: 0;
 }
 
-.red {
-    background: red;
-    margin-bottom: 15px;
-    font-weight: bold;
+.btn:focus {
+  color: orange;
+  outline: 0;
+}
+
+.super {
+  border-color: orange;
+  color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: orange;
+  box-shadow: 0 0 25px 15px black inset, 0 0 0 0 black;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+.super:hover {
+  background-color: orange;
+  color: orange;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  box-shadow: 0 0 30px 0 black inset, 0 0 10px 6px black;
 }

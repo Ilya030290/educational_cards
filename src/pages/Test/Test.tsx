@@ -10,9 +10,11 @@ export const Test: React.FC = () => {
     const [testValue, setTestValue] = useState<string>('');
     const [checked, setChecked] = useState<boolean>(false);
 
+    const error = testValue ? '' : 'enter text';
+
     const showTestValue = () => {
-        alert(testValue);
-    }
+        error ? alert('enter text...') : alert(testValue);
+    };
 
     return (
         <div className={s.mainBlock}>
@@ -21,6 +23,7 @@ export const Test: React.FC = () => {
                 value={testValue}
                 onChangeText={setTestValue}
                 onEnter={showTestValue}
+                error={error}
             />
             <SuperButton onClick={showTestValue}>
                 SuperButton

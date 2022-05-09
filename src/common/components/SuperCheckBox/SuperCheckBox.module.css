@@ -5,9 +5,14 @@
     padding-left: 25px;
     margin-right: 15px;
     font-size: 10px;
+    width: 15px;
+    height: 15px;
 }
 
 .spanClassName {
-    color: darkseagreen;
+    color: yellowgreen;
     font-weight: bold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
+
